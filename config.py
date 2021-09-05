@@ -1,3 +1,0 @@
-MY_ID = '8465a7d0'
-MY_API_Key = 'ddcab268198e19c54443fea0723c023a'
-

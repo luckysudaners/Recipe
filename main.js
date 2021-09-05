@@ -3,7 +3,13 @@ const searchResultDiv = document.querySelector(".search-result");
 const container = document.querySelector(".container");
 let searchQuery = "";
 const APP_ID = '8465a7d0';
-const APP_Key = 'ddcab268198e19c54443fea0723c023a';
+const API_Key = 'ddcab268198e19c54443fea0723c023a';
+
+
+
+
+
+
 
 searchForm.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -12,7 +18,7 @@ searchForm.addEventListener("submit", (e) => {
   });
 
   async function fetchAPI() {
-    const baseURL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_ID}&app_key=${APP_Key}&from=0&to=20`;
+    const baseURL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_ID}&app_key=${API_Key}&from=0&to=30`;
     const response = await fetch(baseURL);
     const data = await response.json();
     generateHTML(data.hits);
@@ -38,7 +44,7 @@ searchForm.addEventListener("submit", (e) => {
             ? result.recipe.dietLabels
             : "No Data Found"
         }</p>
-        <p class="item-data">Health labels: ${result.recipe.healthLabels}</p>
+        <p class="item-data">Cuisine Type: ${result.recipe.cuisineType}</p>
       </div>
         `
     })

@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
   }
   img {
     width: 100%;
@@ -20,7 +21,8 @@
     align-items: center;
     justify-content: center;
     padding: 100px 0;
-    background-color: rgb(26, 26, 27);
+    background-color: rgb(7, 21, 51);
+    
   }
   .container {
     width: 100%;
@@ -76,6 +78,10 @@
     width: 100%;
     height: 300px;
     border-radius: 4px;
+  }
+  .item img:hover {
+    filter: drop-shadow(50%);
+    transform: scale(1.1);
   }
   .flex-container {
     display: flex;
