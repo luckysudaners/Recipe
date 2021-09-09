@@ -38,11 +38,11 @@ searchForm.addEventListener("submit", (e) => {
             result.recipe.url
           }">View Recipe</a>
         </div>
-        <p class="item-data">Calories: ${result.recipe.calories.toFixed(2)}</p>
-        <p class="item-data">Diet label: ${
+        <p class="item-data">Meal For: ${result.recipe.yield} People </p>
+        <p class="item-data">Diet Label: ${
           result.recipe.dietLabels.length > 0
             ? result.recipe.dietLabels
-            : "No Data Found"
+            : "None"
         }</p>
         <p class="item-data">Cuisine Type: ${result.recipe.cuisineType}</p>
       </div>
