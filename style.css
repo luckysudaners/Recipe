@@ -14,6 +14,13 @@
     font-family: "Nunito";
     font-size: 12px;
   }
+  p {
+    font-size: 72px;
+    color: rgb(133, 166, 179);
+    
+    text-shadow: 3px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    
+}
   section {
     min-height: 100vh;
     width: 100%;
@@ -21,7 +28,7 @@
     align-items: center;
     justify-content: center;
     padding: 100px 0;
-    background-image: url(./images/rest.jpg) ;
+    background-image: url(./images/rest1.jpg) ;
     background-size: cover;
 	  background-position: bottom center;
     background-attachment: fixed;
@@ -39,7 +46,7 @@
   .brand {
     text-align: center;
     font-size: 4rem;
-    color: rgb(37, 37, 37);
+    color: rgb(250, 246, 246);
     margin-bottom: 30px;
   }
   form {
@@ -126,7 +133,23 @@
     letter-spacing: 0.05rem;
     line-height: 2rem;
   }
-
+ 
+  
+  @media (max-width: 768px) {
+    .search-result {
+      grid-gap: 10px;
+    }
+    .container.initial .brand {
+      font-size: 4rem;
+    }
+    .container.initial form {
+      max-width: 500px;
+    }
+    .container.initial form input {
+      padding: 10px;
+      font-size: 2rem;
+    }
+  }
 
  
   
